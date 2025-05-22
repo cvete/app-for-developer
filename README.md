@@ -10,6 +10,9 @@ This app is login-protected and available only to authorized team members. Unaut
 - Categorization by agency type: "proptech" vs "traditional"
 - Updated regularly via Google Sheets + n8n
 - JSON-based API powering the frontend
+- Multi-language support (EN, DE, FR, IT)
+- Interactive charts with animations
+- Chart export functionality
 
 ## 🛡️ Legal & Privacy
 - No personal data is collected or stored
@@ -17,7 +20,8 @@ This app is login-protected and available only to authorized team members. Unaut
 - Use of this dashboard is internal; do not distribute content externally
 
 ## 📦 Tech Stack
-- Next.js + App Router
+- Next.js 15 + App Router
+- React 19 + TypeScript
 - Tailwind CSS
 - Google Sheets + n8n (OAuth2-secured backend)
 
@@ -29,8 +33,8 @@ Create a `.env.local` file with the following variables:
 ```env
 AUTH_USERNAME=your_username
 AUTH_PASSWORD=your_password
-N8N_BROKER_DATA_URL=https://your-n8n-instance.com/webhook/broker-data
-N8N_API_TOKEN=your_n8n_api_token
+N8N_BROKER_DATA_URL=https://your-n8n-webhook-url
+N8N_API_TOKEN=your_n8n_token
 NODE_ENV=production
 ```
 
@@ -47,3 +51,10 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+## 🎯 All Components Ready
+- ✅ Authentication system
+- ✅ Dashboard layout
+- ✅ Chart components
+- ✅ Multi-language support
+- ✅ Responsive design
